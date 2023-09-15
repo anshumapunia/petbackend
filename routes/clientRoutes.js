@@ -41,7 +41,7 @@ clientRouter.post("/details", async (req, res) => {
     });
 
     const clientEmailData = {
-      from: "anshumapunia0@gmail.com",
+      from: "chauhanrohit716@gmail.com",
       to: email,
       subject: "Appointment Confirmation",
       text: "Thank you for booking the appointment.",
@@ -52,7 +52,7 @@ clientRouter.post("/details", async (req, res) => {
 
     // Send email to the doctor
     const doctorEmailData = {
-      from: "anshumapunia0@gmail.com",
+      from: "chauhanrohit716@gmail.com",
       to: DoctorEmail,
       subject: "New Appointment",
       text: "A new appointment has been booked.",
@@ -64,7 +64,7 @@ clientRouter.post("/details", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "anshumapunia0@gmail.com",
+        user: "chauhanrohit716@gmail.com",
         pass: "aihdxunhyyjycqrv",
       },
     });
@@ -109,7 +109,7 @@ clientRouter.patch('/update/:clientId', async (req, res) => {
 
     // Send email to the client
     const clientEmailData = {
-      from: 'anshumapunia0@gmail.com',
+      from: 'chauhanrohit716@gmail.com',
       to: updatedClient.email,
       subject: 'Appointment Update',
       text: 'Your appointment has been updated.',
@@ -122,7 +122,7 @@ clientRouter.patch('/update/:clientId', async (req, res) => {
 
     // Send email to the doctor
     const doctorEmailData = {
-      from: 'anshumapunia0@gmail.com',
+      from: 'chauhanrohit716@gmail.com',
       to: updatedClient.DoctorEmail,
       subject: 'Appointment Update',
       text: 'An appointment details have been updated.',
